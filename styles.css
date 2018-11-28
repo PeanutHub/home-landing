@@ -1,0 +1,114 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: radial-gradient(50% 80%, #EF4949 18%, #081621 100%);
+    background-size: contain;
+    overflow: hidden;
+    margin: 0;
+    
+    
+}
+.noise{
+    position: fixed;
+    top: 0%;
+    z-index: -1;
+}
+.centro{
+width: 30vw;
+margin: 35vh auto;
+text-align: center;
+position: relative;
+z-index: 20;
+}
+.logo{
+    width: 100%;
+    margin-bottom: 30px;
+
+}
+.centro p{
+    color: whitesmoke;
+    font-weight: medium;
+    font-size: 1.1em;
+    margin-bottom: 25px;
+    
+}
+.centro a{
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    padding: 14px 16px;
+    background: whitesmoke;
+    color: #081621;
+}
+.complemento{
+    position: fixed;
+    top: 50px;
+    width: 80vw;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+} 
+
+.complemento img {
+    width: 100%;
+}
+
+.complemento .circulos{
+    top: 40px;
+    position: fixed;
+    width: 80%;
+}
+
+figure {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+figure img{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+}
+ figure img:nth-child(1){
+     z-index: 2;
+     bottom: 0;
+ }
+
+@media screen and (max-width:600px){
+    body{background: black;
+    }
+    body:after{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        z-index: -2;
+        content: " ";
+        display: block;
+        background-image: radial-gradient(160% 80%, #EF4949 4%, #081621 60%);
+    }
+    .centro {
+        text-align: center;
+        width: 70vw;
+        margin: 25vh auto;
+    }
+    .centro a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:800px){
+    body{
+        background-image: radial-gradient(160% 80%, #EF4949 4%, #081621 60%);
+    }
+    .centro{
+        width: 50vw;
+    }
+    .complemento .circulos{
+        margin-top: 180px;
+    }
+}
+    
